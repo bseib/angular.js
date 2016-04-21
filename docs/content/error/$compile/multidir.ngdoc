@@ -15,3 +15,7 @@ Example scenarios of multiple incompatible directives applied to the same elemen
 * Multiple directives publishing a controller under the same name.
 * Multiple directives declared with the `transclusion` option.
 * Multiple directives attempting to define a `template` or `templateURL`.
+
+Another scenario is when you have a build process that performs concatenation of js sources,
+and you include the same js source file twice. You end up with two copies of the same directive,
+both vying for the same element on the page.
